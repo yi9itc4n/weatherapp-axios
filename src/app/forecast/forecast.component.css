@@ -1,0 +1,21 @@
+:host ::ng-deep .p-scrollpanel-bar-y{
+  display: none;
+}
+:host ::ng-deep .p-scrollpanel-bar-x{
+  display: none;
+}
+
+:host ::ng-deep .p-card  {
+  background: rgba(255,255,255,0);
+  box-shadow: none;
+}
+*{
+  text-shadow: black 0.1em 0.1em 4em;
+}
+img{
+  filter: drop-shadow(0.1em 0.1em 4em black)
+}
+
+:host ::ng-deep .p-scrollpanel-content{
+  overflow-y: hidden;
+}

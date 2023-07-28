@@ -1,0 +1,10 @@
+
+<div class="flex flex-row" >
+  <div class="flex-1 text-3xl font-light p-3 " *ngIf="weatherData">{{weatherData.name}}, {{weatherData.sys.country}}</div>
+  <div class="flex flex-1 pt-3 justify-content-end lg:pr-8 md:pr-7 sm:pr-2">
+        <div class="white-space-nowrap" (keydown.enter)="onSearch()">
+          <input [(ngModel)]="cityName" type="text" class="bg-white-alpha-30 text-white-alpha-60" placeholder="Search" style="max-width: 30vw"  pInputText/>
+          <p-button icon="pi pi-search" styleClass="p-button-outlined" (click)="onSearch()" ></p-button>
+        </div>
+  </div>
+</div>
